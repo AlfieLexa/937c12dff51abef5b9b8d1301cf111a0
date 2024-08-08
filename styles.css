@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    animation: changeBackground 10s infinite;
+    animation: changeBackground 20s ease infinite alternate;
 }
 
 header {
