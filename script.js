@@ -71,21 +71,3 @@ document.addEventListener('DOMContentLoaded', function() {
         handleScrollAnimation();
     });
 });
-
-function toggleMenu() {
-    const menu = document.getElementById('dropdown-menu');
-    const overlay = document.getElementById('overlay');
-    menu.classList.toggle('show');
-    overlay.classList.toggle('show');
-}
-
-function handleScroll() {
-    const scrollElements = document.querySelectorAll('.scroll-animate');
-    scrollElements.forEach((el) => {
-        if (el.getBoundingClientRect().top < window.innerHeight) {
-            el.classList.add('show');
-        }
-    });
-}
-
-window.addEventListener('scroll', handleScroll);
