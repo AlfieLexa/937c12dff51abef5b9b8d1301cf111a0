@@ -87,7 +87,7 @@ header {
 
 .dropdown-menu a {
     color: black;
-    padding: 30px 50px;
+    padding: 20px 28px;
     text-decoration: none;
     display: block;
 }
@@ -145,14 +145,65 @@ ul {
         opacity: 1;
     }
 }
+img {
+	border-radius: 10px;}}
 
 .scroll-animate {
-    opacity: 0;
+   	opacity: 0;
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
+}	
 
 .scroll-animate.show {
-    animation: easeUp 1s forwards;
+   	 animation: easeUp 1s forwards;
+}
+
+.slideshow-container {
+ 	 max-width: 100%;
+ 	 position: relative;
+ 	 margin: auto;
+}
+
+.text {
+  	color: #f2f2f2;
+  	font-size: 15px;
+ 	padding: 8px 12px;
+ 	position: absolute;
+ 	bottom: 8px;
+ 	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+  	color: #f2f2f2;
+  	font-size: 12px;
+  	padding: 8px 12px;
+  	position: absolute;
+  	top: 0;
+  	visibility:hidden;
+}
+
+.dot {
+  	height: 5px;
+  	width: 5px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+
+.active {
+  	background-color: #717171;
+}
+
+.fade {
+  	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
 }
 
 @media (max-width: 767px) {
@@ -301,4 +352,4 @@ ul {
 
 .scroll-animate.show {
     animation: easeUp 1s forwards;
-}
+    }
