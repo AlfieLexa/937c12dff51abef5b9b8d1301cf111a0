@@ -5,9 +5,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(270deg, rgba(255, 127, 80, 0.1), rgba(100, 149, 237, 0.1), rgba(255, 215, 0, 0.1), rgba(255, 105, 180, 0.1));
+    background: linear-gradient(270deg, rgba(255, 127, 80, 0.3), rgba(100, 149, 237, 0.3), rgba(255, 215, 0, 0.3), rgba(255, 105, 180, 0.3));
     background-size: 800% 800%;
     animation: gradientAnimation 15s ease infinite;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes gradientAnimation {
@@ -146,7 +150,7 @@ ul {
     }
 }
 img {
-	border-radius: 10px;}}
+	border-radius: 10px;}
 
 .scroll-animate {
    	opacity: 0;
@@ -352,4 +356,4 @@ ul {
 
 .scroll-animate.show {
     animation: easeUp 1s forwards;
-    }
+}
